@@ -1,0 +1,161 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background: black;
+    color: blanchedalmond;
+    background-color: #000000;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24'%3E%3Cg fill='%237e4848' fill-opacity='0.4'%3E%3Cpolygon fill-rule='evenodd' points='8 4 12 6 8 8 6 12 4 8 0 6 4 4 6 0 8 4'/%3E%3C/g%3E%3C/svg%3E");
+    font-size: 16px;
+    font-family: 'Oswald', sans-serif;
+
+}
+
+a{
+    color: white; /*color de los enlaces*/
+    text-decoration: none;  /*quitar lineas*/
+}
+
+ul{
+    list-style: none;   /*eliminar estilos por defecto*/
+}
+
+.container{
+    width: 90%;
+    margin: auto;  /*centralizar container principal*/
+}
+
+/*navigation*/
+
+.nav-main {
+    font-size: 17px;
+    display: flex;  /*organiza elemento consecutivamente*/
+    justify-content: space-between; /*usar todo el ancho disponible*/
+    align-items: center;
+    height: 60px;
+    padding: 20px 0;
+}
+
+.nav-brand{ /*logo de la banda*/
+    width: 170px;
+}
+
+/* NAV LEFT*/
+.nav-main ul {
+    display: flex;
+}
+
+.nav-main ul li {
+    padding: 80px; /*separar item de navegation*/
+}
+
+.nav-main ul li a {
+    padding: 6px;
+}
+
+.nav-main ul li a:hover { /*item modo enlace*/
+    border-bottom: 2px solid white;
+}
+
+.nav-main ul.nav-menu {
+    display: 1;
+    margin-left: 10px; /*distance*/
+}
+
+/*SHOWCASE 1*/
+
+
+.showcase {
+    width: 100%;
+    height: 500px;
+    background: url('/img/showcase1.jpg') no-repeat center center/cover;
+    padding-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.btn {
+    cursor: pointer;
+    display: inline-block;
+    border: 0;
+    font-weight: bold;
+    padding: 10px 20px;
+    background: #262626;
+    font-size: 20px;
+    border: 1px solid white;
+    margin: 10px 0;
+}
+
+.btn:hover{
+    opacity: .7;
+}
+
+.showcase h2,
+.showcase p {        /*separar textos*/
+    margin-bottom: 10px; 
+}
+
+/*texto1*/
+.container-text1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    margin: 30px 0;
+}
+
+
+/*SHOWCASE 2*/
+
+.showcase2 {
+    width: 100%;
+    height: 500px;
+    background: url('/img/showcase2.jpg') no-repeat center center/cover;
+    padding-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    margin: 30px 0;
+}
+
+/*SOCIAL*/
+
+.social{
+    margin: 55px;
+}
+
+.social p{
+    text-align: center;
+    font-size: 25px;
+    margin-bottom: 20px;
+}
+
+.links{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.links a{
+    margin: 0 30px;
+
+}
+
+.links a i{
+    font-size: 3rem;
+}
+
+.footer{
+    background: #2f3640;
+    color: #616161;
+    font-size: 12px;
+    padding: 20px 0;
+    text-align: center;
+    padding-bottom: 20px;
+}
