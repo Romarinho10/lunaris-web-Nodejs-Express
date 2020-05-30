@@ -124,6 +124,53 @@ ul{
     margin: 30px 0;
 }
 
+
+/*BIO- SHOWCASE*/
+.showcase-bio {
+    width: 100%;
+    height: 500px;
+    background: url('/img/bio.jpg') no-repeat center center/cover;
+}
+
+.lunaris-logo {
+    width: 65%;
+    height: 250px;
+    background: url('/img/bio02.jpg') no-repeat center center/cover;
+    margin: 0 auto;  
+}
+
+/*BIO-INTEGRANTS*/
+
+.integrants {
+    background: black;
+    padding: 10px;
+}
+.container-integrants {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 25px;
+    margin: 0 10px;
+    text-align: center;
+}
+
+.integrants img {
+    width: 100%;
+    height: 200px;
+}
+
+.integrants h3 {
+    font-size: 20px;
+    margin: 10px, 0;
+}
+
+.integrants a {
+    padding: 10px 0;
+    color: #f2f2f2;
+    text-transform: uppercase;
+    display: inline-block;
+    font-weight: bold;
+}
+
 /*SOCIAL*/
 
 .social{
