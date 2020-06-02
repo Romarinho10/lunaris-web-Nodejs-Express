@@ -171,6 +171,121 @@ ul{
     font-weight: bold;
 }
 
+/*GALLERY*/
+
+/*GALLERY- SHOWCASE*/
+.showcase-gallery {
+    width: 50%;
+    height: 150px;
+    background: url('/img/gal01.png') no-repeat center center/cover;
+    margin: auto;
+    text-align: center;
+}
+
+.gal-intro{
+    text-align: center;
+    padding: 10px;
+}
+
+/*GALLERY PHOTOS ONE*/
+
+.slide-container,
+.slide-container-two {
+    max-width: 80%;
+    max-height: 100vh;
+    width: 100%;
+    height: auto;
+    position: relative;
+    overflow: hidden;
+    margin: auto;
+}
+
+ .mySlider,
+ .myslider2 {
+    display: none;
+    transition: 2s;
+    max-height: 100vh;
+}  
+
+.mySlider img,
+.myslider2 img {
+    width: 100%;
+    max-height: 80vh;
+    height: inherit;
+    object-fit: cover;
+    vertical-align: top;
+    transition: 2s;
+}
+
+.arrows,
+.arrows2 {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 20px;
+}
+
+.arrows a,
+.arrows2 a {
+    color: white;
+    display: inline-block;
+    padding: 20px;
+    text-decoration: none;
+
+}
+
+.arrows a:hover,
+.arrows2 a:hover {
+    background: #262626;
+    transition: .5s;
+}
+
+.lines,
+.lines2 {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 15px;
+}
+
+.line,
+.line2 {
+    cursor: pointer;
+    height: 4px;
+    width: 50px;
+    margin: 0 2px;
+    background: white;
+    display: inline-block;
+    margin-left: 3px;
+}
+
+.active {
+    background: #290d0b;
+}
+
+.fade {
+    animation-name: fade;
+    animation-duration: 2s;
+}
+
+@keyframes fade {
+    from {opacity: .4;}
+    to {opacity: 1;}
+}
+
+.gallery-text {
+    text-align: center;
+    margin: 10px;
+}
+
+/*GALERSY PHOTOS TWO*/
+
 /*SOCIAL*/
 
 .social{
