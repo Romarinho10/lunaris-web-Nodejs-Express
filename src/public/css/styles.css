@@ -49,7 +49,7 @@ ul{
 }
 
 .nav-main ul li {
-    padding: 80px; /*separar item de navegation*/
+    padding: 100px; /*separar item de navegation*/
 }
 
 .nav-main ul li a {
@@ -65,6 +65,16 @@ ul{
     margin-left: 10px; /*distance*/
 }
 
+.menu-btn {
+    position: absolute;
+    cursor: pointer;
+    top: 60px;
+    right: 70px;
+    z-index: 2;
+    display: none;
+    
+}
+
 /*SHOWCASE 1*/
 
 
@@ -72,7 +82,7 @@ ul{
     width: 100%;
     height: 500px;
     background: url('/img/showcase1.jpg') no-repeat center center/cover;
-    padding-bottom: 50px;
+    padding: 50px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -116,7 +126,7 @@ ul{
     width: 100%;
     height: 500px;
     background: url('/img/showcase2.jpg') no-repeat center center/cover;
-    padding-bottom: 50px;
+    padding: 50px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -129,12 +139,14 @@ ul{
 .showcase-bio {
     width: 100%;
     height: 500px;
+    padding: 50px;
     background: url('/img/bio.jpg') no-repeat center center/cover;
 }
 
 .lunaris-logo {
     width: 65%;
     height: 250px;
+    padding: 50px;
     background: url('/img/bio02.jpg') no-repeat center center/cover;
     margin: 0 auto;  
 }
@@ -189,8 +201,7 @@ ul{
 
 /*GALLERY PHOTOS ONE*/
 
-.slide-container,
-.slide-container-two {
+.slide-container {
     max-width: 80%;
     max-height: 100vh;
     width: 100%;
@@ -200,15 +211,13 @@ ul{
     margin: auto;
 }
 
- .mySlider,
- .myslider2 {
+ .mySlider {
     display: none;
     transition: 2s;
     max-height: 100vh;
 }  
 
-.mySlider img,
-.myslider2 img {
+.mySlider img {
     width: 100%;
     max-height: 80vh;
     height: inherit;
@@ -217,8 +226,7 @@ ul{
     transition: 2s;
 }
 
-.arrows,
-.arrows2 {
+.arrows {
     width: 100%;
     height: 100%;
     position: absolute;
@@ -229,8 +237,7 @@ ul{
     font-size: 20px;
 }
 
-.arrows a,
-.arrows2 a {
+.arrows a {
     color: white;
     display: inline-block;
     padding: 20px;
@@ -238,14 +245,12 @@ ul{
 
 }
 
-.arrows a:hover,
-.arrows2 a:hover {
+.arrows a:hover {
     background: #262626;
     transition: .5s;
 }
 
-.lines,
-.lines2 {
+.lines {
     position: absolute;
     bottom: 0;
     width: 100%;
@@ -254,8 +259,7 @@ ul{
     margin-bottom: 15px;
 }
 
-.line,
-.line2 {
+.line {
     cursor: pointer;
     height: 4px;
     width: 50px;
@@ -284,7 +288,29 @@ ul{
     margin: 10px;
 }
 
-/*GALERSY PHOTOS TWO*/
+/*VIDEO SECTION*/
+
+.video-showcase {
+    width: 100%;
+    height: 490px;
+    background: url('/img/video.jpg') no-repeat center center/cover;
+    margin: 10px 0;
+}
+
+.text-video {
+    text-align: center;
+    margin: 10px 0;
+}
+
+/*VIDEO CARDS*/
+.card-video {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+    margin: 5px 0 ;
+    text-align: center;
+}
+
 
 /*SOCIAL*/
 
@@ -320,4 +346,77 @@ ul{
     padding: 20px 0;
     text-align: center;
     padding-bottom: 20px;
+}
+
+/*MOBILE*/
+
+@media (max-width: 700px) {
+    
+    .menu-btn{
+    
+        display: initial;
+    }
+
+    .nav-main ul.nav-menu {
+        display: inline-block   ;
+        position: absolute;
+        top: 0; /*esquina*/
+        left: 0; /*para estar a la izquierda*/
+        width: 220px;
+        background: #2f3640;
+        height: 60%;
+        padding: 30px;
+        opacity: .9;
+        transform: translateX(-400px);
+        transition: transform .5s ease-in-out;
+    }
+
+    .nav-main ul.nav-menu.show {
+        transform: translateX(-20px);
+    }
+
+    .nav-main ul li {
+        padding: 30px; /*separar item de navegation*/
+    }
+
+    .showcase-bio,
+    .lunaris-logo {
+        width: 100%;
+        height: 300px;
+        margin: auto;
+    }
+
+    .integrants img {
+        width: 100%;
+        height: 500px;
+        
+    }
+
+    .container-integrants {
+        display: inline-block;
+    }
+    .card-video {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+@media (max-width: 500px) {
+
+    .showcase,
+    .showcase2 {
+        width: 100%;
+        height: 400px;
+    }
+
+    .container-text1 {
+        text-align: center;
+    }
+
+    .card-video {
+        display: inline-block;
+    }
+
+    .video-showcase {
+        height: 290px;
+    }
 }

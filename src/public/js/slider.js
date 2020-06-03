@@ -9,6 +9,10 @@ function posSlide(n){
     showSlide(indice=n);
 }
 
+setInterval(function tiempo(){
+    showSlide(indice+=1);
+},4000);
+
 function showSlide(n){
     let i;
     let slides = document.getElementsByClassName('mySlider');
